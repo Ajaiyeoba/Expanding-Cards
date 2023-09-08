@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    html {
+  height: 100%;
+  body: 100%;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.sec {
+  overflow: hidden;
+  position: relative;
+  min-width: 5%;
+  color: #fff;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 260px;
+  transition: 0.5s;
+}
+
+.sec:hover {
+  min-width: 65%;
+  transition: 0.5s;
+}
+
+.frame {
+  background: #0f0523 50% 50% / cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.frame::before {
+  background: -webkit-linear-gradient(transparent, rgba(67, 17, 51, 0.5), #000320);
+  background: linear-gradient(transparent, rgba(67, 17, 51, 0.5), #000320);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}</style>
+</head>
+<body>
+    <div class="row">
+        <div class="sec">
+          <div class="frame" style="background-image:url(https://source.unsplash.com/1600x900/?sig=1)">
+            <h1>Okay</h1>
+        </div>
+            
+        </div>
+        <div class="sec">
+          <div class="frame" style="background-image:url(https://source.unsplash.com/1600x900/?sig=2)"></div>
+        </div>
+        <div class="sec">
+          <div class="frame" style="background-image:url(https://source.unsplash.com/1600x900/?sig=3)"></div>
+        </div>
+        <div class="sec">
+          <div class="frame" style="background-image:url(https://source.unsplash.com/1600x900/?sig=4)"></div>
+        </div>
+        <div class="sec">
+          <div class="frame" style="background-image:url(https://source.unsplash.com/1600x900/?sig=5)"></div>
+        </div>
+        <div class="sec">
+          <div class="frame" style="background-image:url(https://source.unsplash.com/1600x900/?sig=6)"></div>
+        </div>
+        <div class="sec">
+          <div class="frame" style="background-image:url(https://source.unsplash.com/1600x900/?sig=101)"></div>
+        </div>
+        <div class="sec">
+          <div class="frame" style="background-image:url(https://source.unsplash.com/1600x900/?sig=102)"></div>
+        </div>
+      </div>
+</body>
+</html>
